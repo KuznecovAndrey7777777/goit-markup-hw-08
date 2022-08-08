@@ -1,0 +1,53 @@
+.nav {
+    margin-right: auto;
+
+&__item &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__list {
+    display: flex;
+    gap: 50px;
+}
+
+&__item:last-child {
+    margin-right: 0;
+}
+
+&__link {
+    color: var(--primary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+&__item &__link:hover,
+&__item &__link:focus {
+    color: var(--accent-color);
+}
+
+&__item &__link.current {
+    color: var(--accent-color);
+}
+
+&__line {
+    position: relative;
+}
+
+&__line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+}
+}

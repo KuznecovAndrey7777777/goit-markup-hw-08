@@ -1,0 +1,45 @@
+.header {
+    border-bottom: 1px solid hsl(0, 0%, 93%);
+
+&__container {
+    display: flex;
+    align-items: center;
+}
+
+&__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+&__contakt {
+    display: flex;
+    align-items: center;
+    color: var(--background-grey);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__icon {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+&__contakt:last-child {
+    margin-right: 0;
+}
+
+&__contakt:hover,
+&__contakt:focus {
+    color: var(--accent-color);
+}
+}
