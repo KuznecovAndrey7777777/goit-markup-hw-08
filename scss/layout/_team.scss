@@ -15,7 +15,6 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--background-white);
-    
   }
 
   &__personal {
@@ -39,18 +38,17 @@
 
   &__img.no-gap {
     display: block;
-height: 460px;
-width: 450px;
-    
+    height: 460px;
+    width: 450px;
 
     @media screen and (min-width: 768px) {
       width: 354px;
-height: 374px;
+      height: 374px;
     }
 
     @media screen and (min-width: 1200px) {
       width: 270px;
-height: 260px;
+      height: 260px;
     }
   }
 }

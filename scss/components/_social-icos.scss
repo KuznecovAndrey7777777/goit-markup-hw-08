@@ -1,14 +1,12 @@
-
 .icons {
-
-&__list {
+  &__list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
+  }
 
-&__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,38 +15,38 @@
     border-radius: 50%;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__link:hover,
-&__link:focus {
+  &__link:hover,
+  &__link:focus {
     background-color: var(--accent-color);
     color: var(--background-white);
-}
+  }
 
-&__socials {
+  &__socials {
     fill: currentColor;
-}
+  }
 }
 
 .team-socials {
-    color: var(--icons-colorgrey);
-    transition-property: background-color, color;
+  color: var(--icons-colorgrey);
+  transition-property: background-color, color;
 }
 
 .footer-link {
-    background-color: var(--icons-background-color);
-    transition-property: background-color;
+  background-color: var(--icons-background-color);
+  transition-property: background-color;
 }
 
 .footer-link:hover,
 .footer-linkfocus {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .footer-icons__socials {
-    fill: var(--background-white);
+  fill: var(--background-white);
 }
 
 .footer-link:hover .footer-icons__socials {
-    fill: var(--background-white);
+  fill: var(--background-white);
 }
