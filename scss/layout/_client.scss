@@ -3,22 +3,42 @@
 &__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
 }
 
 &__logo {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icons-colorgrey);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     color: var(--icons-colorgrey);
     transition-property: border-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// breakpoint mobile
+@media screen and (min-width: 480px) {
+
+}
+
+// breakpoint tabelet
+@media screen and (min-width: 768px) {
+width: 226px;
+height: 92px;
+}
+
+// breakpoint desktop
+@media screen and (min-width: 1200px) {
+width: 170px;
+height: 92px;
+}
+
 }
 
 &__logo:hover,

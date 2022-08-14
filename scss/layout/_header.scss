@@ -1,18 +1,36 @@
 .header {
-    border-bottom: 1px solid hsl(0, 0%, 93%);
+  border-bottom: 1px solid hsl(0, 0%, 93%);
 
-&__container {
+  &__container {
     display: flex;
     align-items: center;
-}
+  }
 
-&__list {
+  &__list {
     display: flex;
     align-items: center;
     gap: 30px;
-}
 
-&__contakt {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  &__cotact-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      gap: 10px;
+      margin-left: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
+  }
+
+  &__contakt {
     display: flex;
     align-items: center;
     color: var(--background-grey);
@@ -21,25 +39,32 @@
     line-height: 1.15;
     letter-spacing: 0.02em;
     margin-right: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&__icon {
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__icon {
     display: inline-block;
     fill: currentColor;
     margin-right: 10px;
-}
+  }
 
-&__contakt:last-child {
+  &__contakt:last-child {
     margin-right: 0;
-}
+  }
 
-&__contakt:hover,
-&__contakt:focus {
+  &__contakt:hover,
+  &__contakt:focus {
     color: var(--accent-color);
-}
+  }
 }

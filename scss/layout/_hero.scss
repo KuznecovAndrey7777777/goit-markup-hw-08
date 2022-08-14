@@ -1,20 +1,24 @@
 .hero {
-    background-color: var(--grey-other);
-    text-align: center;
-    padding: 200px 0;
+  background-color: var(--grey-other);
+  text-align: center;
 
-&__title {
+  &__title {
     color: var(--background-white);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
-}
+    padding-top: 118px;
 
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      padding-top: 200px;
+    }
+  }
 }
