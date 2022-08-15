@@ -15,9 +15,9 @@
   }
 
   &__item {
-    flex-basis: 450px;
+    flex-basis: 100%;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       margin-top: 30px;
 
       &:first-child {
@@ -55,7 +55,7 @@
     margin-top: 30px;
     margin-bottom: 0px;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
     }
   }

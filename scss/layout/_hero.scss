@@ -1,6 +1,12 @@
 .hero {
-  background-color: var(--grey-other);
   text-align: center;
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    padding: 200px 0;
+  }
 
   &__title {
     color: var(--background-white);
@@ -13,12 +19,12 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 118px;
+    max-width: 360px;
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
-      padding-top: 200px;
+      max-width: 696px;
     }
   }
 }
