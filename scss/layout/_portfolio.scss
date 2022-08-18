@@ -1,6 +1,6 @@
 .portfolio {
   &__list {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     gap: 20px 24px;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@
 
   &__direccion {
     color: var(--background-grey);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.9;
     margin-top: 4px;
   }

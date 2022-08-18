@@ -8,6 +8,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (max-width: 517px) {
+    height: 621px;
+  }
+
   &__button {
     position: absolute;
     top: 8px;
